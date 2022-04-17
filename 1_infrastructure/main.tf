@@ -133,7 +133,7 @@ resource "aws_route" "us_east_1-us_west-2" {
   vpc_peering_connection_id = aws_vpc_peering_connection_accepter.us_east_1-us_west-2.id
 }
 
-# Peering connection: us_west-2 <-> us_east_1
+# Peering connection: us_west-2 <-> us_east_2
 
 resource "aws_vpc_peering_connection" "us_west-2-us_east_2" {
   vpc_id        = module.vpc_us_west_2.vpc_id
